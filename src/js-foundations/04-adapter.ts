@@ -1,7 +1,11 @@
-const { getAge, getUuid } = require('../plugins')
+import { getAge, getUuid } from '../plugins'
 
+interface Person {
+    name: string,
+    birthdate: string
+}
 
-const buildPerson = ({ name, birthdate }) => {
+const buildPerson = ({ name, birthdate }: Person) => {
     return {
         // id: new Date().getTime(),
         id: getUuid(),
@@ -11,7 +15,7 @@ const buildPerson = ({ name, birthdate }) => {
     }
 }
 
-const obj = {
+const obj: Person = {
     name: 'John',
     birthdate: '1988-02-07'
 }

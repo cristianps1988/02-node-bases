@@ -3,6 +3,7 @@
 //require('./js-foundations/02-destructuring')
 // require('./js-foundations/04-adapter')
 
+
 //console.log(emailTemplate)
 
 // const { getUserById } = require('./js-foundations/03-callbacks')
@@ -54,6 +55,6 @@
 const { getPokemonByIdAsyncAdapter } = require('./js-foundations/08-async-await-adapter')
 
 getPokemonByIdAsyncAdapter(1)
-    .then(pokemon => console.log({ pokemon }))
-    .catch(error => console.log({ error }))
+    .then((pokemon: string) => console.log({ pokemon }))
+    .catch((error: string) => console.log({ error }))
     .finally(() => console.log('Finalizado'))
