@@ -52,9 +52,18 @@
 
 
 // async-await-adapter
-const { getPokemonByIdAsyncAdapter } = require('./js-foundations/08-async-await-adapter')
+// const { getPokemonByIdAsyncAdapter } = require('./js-foundations/08-async-await-adapter')
 
-getPokemonByIdAsyncAdapter(1)
-    .then((pokemon: string) => console.log({ pokemon }))
-    .catch((error: string) => console.log({ error }))
-    .finally(() => console.log('Finalizado'))
+// getPokemonByIdAsyncAdapter(1)
+//     .then((pokemon: string) => console.log({ pokemon }))
+//     .catch((error: string) => console.log({ error }))
+//     .finally(() => console.log('Finalizado'))
+
+// logger
+import { buildLoger } from './plugins'
+
+const logger = buildLoger('index.ts')
+
+logger.log('Holis')
+
+logger.error('Esto es un error')
