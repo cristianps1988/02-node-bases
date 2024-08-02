@@ -4,7 +4,7 @@
 
 
 describe('App', () => {
-    it('should be true 30', () => {
+    test('should be true 30', () => {
         // Arrange
         const num1: number = 10
         const num2: number = 20

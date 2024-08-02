@@ -60,10 +60,10 @@
 //     .finally(() => console.log('Finalizado'))
 
 // logger
-import { buildLoger } from './plugins'
+// import { buildLoger } from './plugins'
 
-const logger = buildLoger('index.ts')
+// const logger = buildLoger('index.ts')
 
-logger.log('Holis')
+// logger.log('Holis')
 
-logger.error('Esto es un error')
+// logger.error('Esto es un error')
